@@ -149,23 +149,128 @@
 
   <script>
     const defaultFaqs = [
-      {
-        question: "How do you pronounce FAQ?",
-        answer: "As the teacher Øyvind once said, FACK"
-      },
-      {
-        question: "So how do u open file explorer? It's incredably hard",
-        answer: "The button that has the text ctrl on it, hold that while you press the button with a E letter on it"
-      },
-      {
-        question: "Who is Øyvind",
-        answer: "Øyvind is known as the best teacher at ASVG"
-      },
-      {
-        question: "Who's yuri?",
-        answer: "yuri tarded, lol xd so funny lmao. lmao means laugh mine apple on"
-      }
-    ];
+    {
+      question: "Hvordan endrer jeg passordet mitt?",
+      answer: "Du kan endre passordet ditt via Ctrl+Alt+Del → Endre passord, eller på Office 365-portalen under sikkerhetsinnstillinger."
+    },
+    {
+      question: "Hva gjør jeg hvis PC-en er treg?",
+      answer: "Start PC-en på nytt. Hvis problemet vedvarer, sjekk at du har nok lagringsplass og oppdaterte systemoppdateringer. Kontakt IT hvis det fortsetter."
+    },
+    {
+      question: "Hvordan kobler jeg meg til VPN?",
+      answer: "Åpne VPN-klienten, skriv inn brukernavn og passord, og klikk ‘Koble til’. Instruksjoner finnes på intranettet under IT-hjelp."
+    },
+    {
+      question: "Jeg får ikke skrevet ut, hva kan være galt?",
+      answer: "Sjekk at skriveren er valgt riktig, og at du er koblet til nettverket. Forsøk å installere skriveren på nytt eller kontakt IT-support."
+    },
+    {
+      question: "Hvordan setter jeg opp e-post på mobilen min?",
+      answer: "Last ned Outlook-appen, logg inn med din jobb-epost og passord, og følg veiledningen. Husk å godkjenne sikkerhetskravene."
+    },
+    {
+      question: "Hva gjør jeg hvis jeg har glemt passordet mitt?",
+      answer: "Bruk selvbetjeningsportalen for passordgjenoppretting. Hvis det ikke fungerer, kontakt IT-support for hjelp."
+    },
+    {
+      question: "Hvordan installerer jeg Teams?",
+      answer: "Teams er allerede installert på firmamaskiner. Hvis ikke, kan du laste det ned fra Microsoft sin nettside og logge inn med din jobbkonto."
+    },
+    {
+      question: "Hva gjør jeg hvis Teams ikke fungerer?",
+      answer: "Forsøk å logge ut og inn igjen, sjekk internettforbindelsen, og oppdater Teams. Hvis problemet vedvarer, kontakt IT."
+    },
+    {
+      question: "Hvordan kobler jeg til Wi-Fi på kontoret?",
+      answer: "Velg bedriftsnettverket i listen over trådløse nettverk og logg inn med jobbbrukeren din."
+    },
+    {
+      question: "Hvordan kobler jeg til hjemmekontor?",
+      answer: "Bruk VPN og logg inn med jobbkontoen din. Følg veiledningen som ligger på intranettet."
+    },
+    {
+      question: "Hvordan rapporterer jeg phishing-epost?",
+      answer: "Ikke klikk på noen lenker. Marker e-posten som ‘Phishing’ i Outlook, eller videresend til sikkerhetsteamet."
+    },
+    {
+      question: "Hvordan aktiverer jeg tofaktorautentisering?",
+      answer: "Gå til sikkerhetsinnstillingene i Microsoft 365 og legg til Microsoft Authenticator eller SMS som verifiseringsmetode."
+    },
+    {
+      question: "Hva gjør jeg hvis jeg ikke har tilgang til internett?",
+      answer: "Sjekk at nettverkskabelen eller Wi-Fi er tilkoblet. Start ruteren på nytt hvis du er hjemme. Kontakt IT dersom problemet fortsetter."
+    },
+    {
+      question: "Hvordan deler jeg filer sikkert?",
+      answer: "Bruk SharePoint eller OneDrive og del via lenker med riktig tilgangsnivå. Unngå å sende sensitive filer via e-post."
+    },
+    {
+      question: "Hvordan logger jeg på intranettet?",
+      answer: "Gå til intranettets webadresse og logg inn med din jobbkonto."
+    },
+    {
+      question: "Hva gjør jeg hvis jeg mister PC-en min?",
+      answer: "Rapporter umiddelbart til IT og nærmeste leder. IT kan fjernslette enheten hvis nødvendig."
+    },
+    {
+      question: "Hvordan installerer jeg skriver hjemmefra?",
+      answer: "Koble skriveren til PC-en via USB eller Wi-Fi, gå til Innstillinger → Enheter → Skrivere og legg den til manuelt."
+    },
+    {
+      question: "Hvordan oppdaterer jeg programvaren på PC-en?",
+      answer: "Windows-oppdateringer lastes vanligvis ned automatisk. Du kan også sjekke manuelt under Innstillinger → Oppdatering og sikkerhet."
+    },
+    {
+      question: "Hva gjør jeg hvis jeg får blåskjerm?",
+      answer: "Noter feilkoden som vises og start maskinen på nytt. Hvis problemet skjer flere ganger, kontakt IT-support."
+    },
+    {
+      question: "Hvordan sikrer jeg mobilen min?",
+      answer: "Bruk skjermlås (PIN, fingeravtrykk eller ansiktsgjenkjenning), hold systemet oppdatert, og installer kun apper fra offisielle kilder."
+    },
+    {
+      question: "Hvordan får jeg tilgang til fellesmapper?",
+      answer: "Fellesmapper ligger under ‘Denne PC-en → Nettverksstasjoner’. Kontakt IT hvis du mangler tilgang."
+    },
+    {
+      question: "Hva gjør jeg hvis jeg får virus på PC-en?",
+      answer: "Koble fra internett, ikke åpne flere filer, og kontakt IT-support umiddelbart for å fjerne viruset."
+    },
+    {
+      question: "Hvordan setter jeg opp Outlook signatur?",
+      answer: "Gå til Innstillinger i Outlook → E-post → Signatur, og legg inn den godkjente firmasignaturen."
+    },
+    {
+      question: "Hva gjør jeg hvis skjermen er svart?",
+      answer: "Sjekk at skjermen er slått på, at kablene er koblet riktig til, og forsøk å trykke på tastaturet. Kontakt IT hvis problemet fortsetter."
+    },
+    {
+      question: "Hvordan kobler jeg til en ekstern skjerm?",
+      answer: "Koble skjermen til PC-en med HDMI eller DisplayPort, og trykk Windows-tast + P for å velge visningsmodus."
+    },
+    {
+      question: "Hvordan stiller jeg inn automatisk fraværsassistent i Outlook?",
+      answer: "Gå til Fil → Automatisk svar i Outlook, skriv inn meldingene for intern og ekstern fraværsbeskjed, og angi tidsperiode."
+    },
+    {
+      question: "Hvordan deler jeg skjermen i Teams?",
+      answer: "Klikk på ‘Del’-knappen i Teams-møtet, og velg vinduet eller skjermen du ønsker å dele."
+    },
+    {
+      question: "Hvordan får jeg tilgang til gamle e-poster?",
+      answer: "Søk i arkivet i Outlook eller bruk ‘Åpne arkivmappe’ hvis e-postene er flyttet dit."
+    },
+    {
+      question: "Hva gjør jeg hvis tastaturet ikke fungerer?",
+      answer: "Forsøk å koble det ut og inn igjen. Hvis trådløst, sjekk batteriene. Kontakt IT for nytt tastatur hvis problemet vedvarer."
+    },
+    {
+      question: "Hvordan låser jeg PC-en min raskt?",
+      answer: "Trykk Windows-tast + L for å låse skjermen umiddelbart."
+    }
+  ];
+
 
     let faqs = JSON.parse(localStorage.getItem("faqs")) || defaultFaqs;
 
@@ -237,3 +342,4 @@
   </script>
 </body>
 </html>
+
